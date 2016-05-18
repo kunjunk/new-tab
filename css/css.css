@@ -1,0 +1,122 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    font-family: Montserrat;
+    -webkit-font-smoothing: antialiased;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100%;
+}
+a:link, a:visited, a:active{
+  text-decoration: none;
+  color: #000000;
+}
+a:hover{
+  color: #ffffff;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    box-shadow: 0px 1px 3px #000000;
+}
+.tab {
+    text-align: center;
+    width: 200px;
+    height: 75px;
+    line-height: 75px;
+}
+
+#social {
+    background-color: #9DF29B;
+}
+#social:hover{
+    background-color: #B1F5AF;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+#news {
+    background-color: #2F8299;
+
+}
+#news:hover {
+    background-color: #599BAD;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+#tech {
+    background-color: #41CCBB;
+}
+#tech:hover {
+    background-color: #67D6C9;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+p {
+    font-family: Pathway Gothic One;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timebox{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+h1 {
+    font-size: 90px;
+    color: #ffffff;
+    text-shadow: 0px 1px 3px #000000;
+}
+.dropdown-content {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+opacity: 0;
+ position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    padding: 0;
+}
+.tab:hover .dropdown-content {
+opacity: 100;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    box-shadow: 0px 1px 3px #000000;
+}
+
+#facebook{background-color:  #b3f0ff;}
+#reddit{background-color: #C1C1C1}
+#bbc{background-color: #E06666}
+#economist{background-color: #D63333}
+#ars{background-color: #F6B26B}
+#engadget{background-color: #9FC5E8}
