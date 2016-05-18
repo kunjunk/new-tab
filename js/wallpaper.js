@@ -26,7 +26,7 @@ function setBackground (images) {
     // generates a random integer between 0 and the length of the supplied array:
     var n = Math.floor(Math.random() * images.length),
         // works out whether to use the 'textContent' or 'innerText' property:
-        textProperty = 'textContent' in document ? 'textContent' : 'innerText';
+        textProperty = 'textContent' in document ? 'textContent' : 'innerHTML';
 
     // sets the background-image of the 'body' element:
     document.body.style.backgroundImage = 'url(' + images[n].src + ')';

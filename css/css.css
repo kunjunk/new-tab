@@ -1,20 +1,29 @@
 html, body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-    font-family: Montserrat;
-    -webkit-font-smoothing: antialiased;
-    background-repeat:no-repeat;
-    background-size:cover;
     height: 100%;
+    width: 100%;
 }
-a:link, a:visited, a:active{
-  text-decoration: none;
-  color: #000000;
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
 }
-a:hover{
-  color: #ffffff;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.tabbx{
+  box-shadow: 0px 1px 3px #000000;
+  display: flex;
+  flex-direction: row;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    color: #ffffff;
 }
 .tabs {
     display: flex;
@@ -22,7 +31,6 @@ a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    box-shadow: 0px 1px 3px #000000;
 }
 .tab {
     text-align: center;
@@ -30,11 +38,10 @@ a:hover{
     height: 75px;
     line-height: 75px;
 }
-
 #social {
     background-color: #9DF29B;
 }
-#social:hover{
+#social:hover {
     background-color: #B1F5AF;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
@@ -44,7 +51,6 @@ a:hover{
 }
 #news {
     background-color: #2F8299;
-
 }
 #news:hover {
     background-color: #599BAD;
@@ -76,12 +82,11 @@ p {
     justify-content: center;
     align-items: center;
 }
-#timebox{
-  width: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+#timebox {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ul {
     list-style-type: none;
@@ -90,33 +95,45 @@ ul {
 h1 {
     font-size: 90px;
     color: #ffffff;
-    text-shadow: 0px 1px 3px #000000;
+    text-shadow: 0 1px 3px #000000;
+    font-family: Montserrat;
 }
 .dropdown-content {
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-opacity: 0;
- position: absolute;
-    background-color: #f9f9f9;
-    width: 200px;
-    padding: 0;
-}
-.tab:hover .dropdown-content {
-opacity: 100;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
-    box-shadow: 0px 1px 3px #000000;
+    opacity: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    padding: 0;
 }
-
-#facebook{background-color:  #b3f0ff;}
-#reddit{background-color: #C1C1C1}
-#bbc{background-color: #E06666}
-#economist{background-color: #D63333}
-#ars{background-color: #F6B26B}
-#engadget{background-color: #9FC5E8}
+.tab:hover .dropdown-content {
+    opacity: 100;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    box-shadow: 0 1px 3px #000000;
+}
+#facebook {
+    background-color: #b3f0ff;
+}
+#reddit {
+    background-color: #C1C1C1
+}
+#bbc {
+    background-color: #E06666
+}
+#economist {
+    background-color: #D63333
+}
+#ars {
+    background-color: #F6B26B
+}
+#engadget {
+    background-color: #9FC5E8
+}
